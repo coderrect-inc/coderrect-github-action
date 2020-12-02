@@ -1,0 +1,16 @@
+name: Coderrect CI Integration
+description: >
+  Scan your code with Coderrect to detect concurrency bugs,
+  and upload the detection report to Coderrect remote server.
+branding:
+  icon: check
+  color: green
+runs:
+  using: composite
+  steps:
+    - run: wget https://public-installer-pkg.s3.us-east-2.amazonaws.com/coderrect-linux-hpc-0.9.1.tar.gz
+      shell: bash
+    - run: coderrect -analyzeAllBinaries make
+      shell: bash
+    - run: coderrect -publishResults -report.host=DEFAULT
+      shell: bash
