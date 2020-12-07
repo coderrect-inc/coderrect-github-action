@@ -5,6 +5,19 @@ description: >
 branding:
   icon: check
   color: green
+inputs:
+  buildCommand:
+    description: "Custom build command"
+    required: false
+    default: "make -j"
+  host:
+    description: "Custom remote host for HTML report"
+    required: false
+    default: "DEFAULT"
+  config:
+    description: "Coderrect configuration file"
+    required: false
+    default: ""
 runs:
   using: composite
   steps:
