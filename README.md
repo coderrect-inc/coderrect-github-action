@@ -16,9 +16,6 @@ Please find more information in our official website: [Coderrect.com](coderrect.
   uses: coderrect-inc/coderrect-github-action@v1.0
   with:
       buildCommand: make all -j 6
-      host: xxx.com
-      config: xxx.json
-
 ```
 
 ## Options
