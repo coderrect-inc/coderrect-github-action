@@ -10,10 +10,18 @@ inputs:
     description: "Custom build command"
     required: false
     default: "make -j"
+  cleanCommand:
+    description: "Custom clean command"
+    required: false
+    default: "make clean"
   host:
     description: "Custom remote host for HTML report"
     required: false
     default: "DEFAULT"
+  options:
+    description: "Command line options for Coderrect Scanner"
+    required: false
+    default: "-analyzeAllBinaries"
   config:
     description: "Coderrect configuration file"
     required: false
@@ -25,9 +33,9 @@ runs:
         wget https://public-installer-pkg.s3.us-east-2.amazonaws.com/coderrect-linux-hpc-0.9.1.tar.gz
         tar zxf coderrect-linux-hpc-0.9.1.tar.gz
         echo "$PWD/coderrect-linux-hpc-0.9.1/bin" >> $GITHUB_PATH
-        make clean
+        ${{ input.cleanCommand }}
       shell: bash
-    - run: coderrect -analyzeAllBinaries make
+    - run: coderrect ${{ inputs.options }} ${{ inputs.buildCommand }}
       shell: bash
-    - run: coderrect -publishResults -report.host=DEFAULT
+    - run: coderrect -publishResults -report.host=${{ inputs.host }}
       shell: bash
