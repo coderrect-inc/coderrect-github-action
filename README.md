@@ -1,4 +1,6 @@
 # Coderrect Github Action <img src="images/github.png" alt="Github" width="40" height="40">
+![license](https://img.shields.io/github/license/coderrect-inc/coderrect-github-action)
+![issue](https://img.shields.io/github/issues/coderrect-inc/coderrect-github-action)
 
 Coderrect Scanner Github Action with HTML report output.
 
