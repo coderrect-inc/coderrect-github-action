@@ -33,7 +33,7 @@ Take a look at this [cmake project](https://github.com/coderrect-inc/CloverLeaf_
   - Description: The relative path for your cmake project's build directory.
 - `options`
   - Default: `"-analyzeAllBinaries"`
-  - Description: The command line options for Coderrect Scanner. Check the (documentation)[https://coderrect.com/documentation/reference/] for all supported options.
+  - Description: The command line options for Coderrect Scanner. Check the [documentation](https://coderrect.com/documentation/reference/) for all supported options.
 
 ## License
    Copyright 2020 Coderrect Inc.
