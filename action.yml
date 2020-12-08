@@ -14,6 +14,10 @@ inputs:
     description: "Custom clean command"
     required: false
     default: "make clean"
+  buildPath:
+    description: "The relative for your build directory"
+    required: false
+    default: "."
   host:
     description: "Custom remote host for HTML report"
     required: false
@@ -33,9 +37,14 @@ runs:
         wget https://public-installer-pkg.s3.us-east-2.amazonaws.com/coderrect-linux-hpc-0.9.1.tar.gz
         tar zxf coderrect-linux-hpc-0.9.1.tar.gz
         echo "$PWD/coderrect-linux-hpc-0.9.1/bin" >> $GITHUB_PATH
+        cd ${{ inputs.buildPath }}
         ${{ inputs.cleanCommand }}
       shell: bash
-    - run: coderrect ${{ inputs.options }} ${{ inputs.buildCommand }}
+    - run: |
+        cd ${{ inputs.buildPath }}
+        coderrect ${{ inputs.options }} ${{ inputs.buildCommand }}
       shell: bash
-    - run: coderrect -publishResults -report.host=${{ inputs.host }}
+    - run: |
+        cd ${{ inputs.buildPath }}
+        coderrect -publishResults -report.host=${{ inputs.host }}
       shell: bash
