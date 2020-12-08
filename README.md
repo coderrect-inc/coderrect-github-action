@@ -29,7 +29,7 @@ Take a look at this [cmake project](https://github.com/coderrect-inc/CloverLeaf_
   - Default: `"make clean"`
   - Description: The command to clean your previous build. Coderrect need to capture the building process of your project for analysis, therefore if your have a test build before applying Coderrect, we need to clean your test build.
 - `buildPath`
-  - Default: `"build"`
+  - Default: `"."`
   - Description: The relative path for your cmake project's build directory.
 - `options`
   - Default: `"-analyzeAllBinaries"`
