@@ -33,7 +33,7 @@ runs:
         wget https://public-installer-pkg.s3.us-east-2.amazonaws.com/coderrect-linux-hpc-0.9.1.tar.gz
         tar zxf coderrect-linux-hpc-0.9.1.tar.gz
         echo "$PWD/coderrect-linux-hpc-0.9.1/bin" >> $GITHUB_PATH
-        ${{ input.cleanCommand }}
+        ${{ inputs.cleanCommand }}
       shell: bash
     - run: coderrect ${{ inputs.options }} ${{ inputs.buildCommand }}
       shell: bash
