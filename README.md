@@ -8,7 +8,7 @@ Coderrect Scanner Github Action with HTML report output.
 
 - Coderrect is an efficient and accurate static analysis solution to identify potential concurrency bugs in your multi-threaded software.
 - Coderrect supports C/C++/Fortran code and common parallel programming interfaces such as OpenMP.
-- Coderrect Github Action supports generating better formatted HTML reports and hosting them on Coderrect cloud for you to review.
+- Coderrect Github Action supports generating formatted HTML reports and hosting them on Coderrect cloud to review.
 
 Please find more information in our official website: [Coderrect.com](coderrect.com) 
 
