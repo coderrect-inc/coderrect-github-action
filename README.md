@@ -20,7 +20,7 @@ Check [here](https://github.com/funemy/memcached/blob/master/.github/workflows/c
 In general, integrating Coderrect requires two steps:
 
 1. Install all dependencies required to build your project:
-```
+```yaml
 - name: Install deps
   run: |
     sudo apt-get update -y
@@ -28,14 +28,14 @@ In general, integrating Coderrect requires two steps:
 ```
 
 2. Apply Coderrect Github Action
-```
+```yaml
 - name: Coderrect Scan
   uses: coderrect-inc/coderrect-github-action@v0.4
 ```
 
 ### For CMake projects
 You will need to install and setup `cmake` first.
-```
+```yaml
 - name: download cmake
   run: |
     wget https://cmake.org/files/v3.18/cmake-3.18.2-Linux-x86_64.tar.gz
@@ -45,7 +45,7 @@ You will need to install and setup `cmake` first.
 ```
 Since we are building the project under the `build` directory instead of the root path.
 We will also need to specify the build directory for Coderrect.
-```
+```yaml
 - name: Coderrect Scan
   uses: coderrect-inc/coderrect-github-action@v0.4
   with:
@@ -54,14 +54,14 @@ We will also need to specify the build directory for Coderrect.
 
 ### For Fortran projects
 You will need to install the fortran compiler first. For example:
-```
+```yaml
 - name: Install fortran
   run: |
     sudo apt-get update -y
     sudo apt-get install -y gfortran
 ```
 Then it is likely that you need to specify the fortran compiler when you use `make`. If so, you should also pass the full compilation command to Coderrect. (`gcc` is pre-installed in the Github Action environment.)
-```
+```yaml
 - name: coderrect scan
   uses: coderrect-inc/coderrect-github-action@v0.4
   with:
@@ -76,7 +76,7 @@ For more details, take a look at this [cmake project](https://github.com/coderre
   - Description: The command to build your project. For example, the command to build your whole project might be `make all` instead of `make`.
 - `cleanCommand`
   - Default: `"make clean"`
-  - Description: The command to clean your previous build. Coderrect need to capture the building process of your project for analysis, therefore if your have a test build before applying Coderrect, we need to clean your test build.
+  - Description: The command to clean your previous build. Coderrect needs to capture the building process for analysis, therefore if you have done a test build before applying Coderrect, we need to clean your test build first.
 - `buildPath`
   - Default: `"."`
   - Description: The relative path for your cmake project's build directory.
