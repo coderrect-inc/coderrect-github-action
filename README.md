@@ -59,7 +59,7 @@ You will need to install the fortran compiler first. For example:
     sudo apt-get update -y
     sudo apt-get install -y gfortran
 ```
-Then it is likely you need to specify the fortran compiler when you use `make`. If so, we should also pass the full compilation command to Coderrect. (`gcc` is pre-installed in the Github Action environment.)
+Then it is likely that you need to specify the fortran compiler when you use `make`. If so, you should also pass the full compilation command to Coderrect. (`gcc` is pre-installed in the Github Action environment.)
 ```
 - name: coderrect scan
   uses: coderrect-inc/coderrect-github-action@v0.4
