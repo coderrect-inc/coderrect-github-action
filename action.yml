@@ -26,10 +26,10 @@ inputs:
     description: "Command line options for Coderrect Scanner"
     required: false
     default: "-analyzeAllBinaries"
-  config:
-    description: "Coderrect configuration file"
+  exit0:
+    description: "Force Coderrect to exit with 0 even when races are detected"
     required: false
-    default: ""
+    default: false
 runs:
   using: composite
   steps:
@@ -46,5 +46,5 @@ runs:
       shell: bash
     - run: |
         cd ${{ inputs.buildPath }}
-        coderrect -publishResults -report.host=${{ inputs.host }}
+        coderrect -publish.cloud=${{ inputs.host }} -publish.exit0=${{ inputs.exit0 }}
       shell: bash
