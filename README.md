@@ -33,7 +33,7 @@ In general, integrating Coderrect requires two steps:
 ```
 
 ### For CMake projects
-You will need to install and setup cmake first.
+You will need to install and setup `cmake` first.
 ```
 - name: download cmake
   run: |
