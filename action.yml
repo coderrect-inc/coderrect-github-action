@@ -34,9 +34,9 @@ runs:
   using: composite
   steps:
     - run: | 
-        wget https://public-installer-pkg.s3.us-east-2.amazonaws.com/coderrect-linux-hpc-0.9.1.tar.gz
-        tar zxf coderrect-linux-hpc-0.9.1.tar.gz
-        echo "$PWD/coderrect-linux-hpc-0.9.1/bin" >> $GITHUB_PATH
+        wget https://public-installer-pkg.s3.us-east-2.amazonaws.com/coderrect-linux-develop.tar.gz
+        tar zxf coderrect-linux-hpc-develop.tar.gz
+        echo "$PWD/coderrect-linux-develop/bin" >> $GITHUB_PATH
         cd ${{ inputs.buildPath }}
         ${{ inputs.cleanCommand }}
       shell: bash
