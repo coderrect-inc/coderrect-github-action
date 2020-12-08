@@ -13,13 +13,61 @@ Coderrect Scanner Github Action with HTML report output.
 Please find more information in our official website: [Coderrect.com](coderrect.com) 
 
 ## Example Usage
+Take [memcached](https://github.com/funemy/memcached) as an example for integrating Coderrect.
+Check [here](https://github.com/funemy/memcached/blob/master/.github/workflows/ci.yml) for the final script.
+
+In general, integrating Coderrect requires two steps:
+
+1. Install all dependencies required to build your project:
+```
+- name: Install deps
+  run: |
+    sudo apt-get update -y
+    sudo apt-get install -y libevent-dev libseccomp-dev git libsasl2-dev
+```
+
+2. Apply Coderrect Github Action
 ```
 - name: Coderrect Scan
-  uses: coderrect-inc/coderrect-github-action@v1.0
-  with:
-      buildCommand: make all -j 6
+  uses: coderrect-inc/coderrect-github-action@v0.4
 ```
-Take a look at this [cmake project](https://github.com/coderrect-inc/CloverLeaf_OpenMP) and [fortran project](https://github.com/coderrect-inc/covid-sim ) to learn how to integrate Coderrect into more complex projects
+
+### For CMake projects
+You will need to install and setup cmake first.
+```
+- name: download cmake
+  run: |
+    wget https://cmake.org/files/v3.18/cmake-3.18.2-Linux-x86_64.tar.gz
+    tar xf cmake-3.18.2-Linux-x86_64.tar.gz
+    mkdir build && cd build
+    ../cmake-3.18.2-Linux-x86_64/bin/cmake ..
+```
+Since we are building the project under the `build` directory instead of the root path.
+We will also need to specify the build directory for Coderrect.
+```
+- name: Coderrect Scan
+  uses: coderrect-inc/coderrect-github-action@v0.4
+  with:
+    buildPath: "build"
+```
+
+### For Fortran projects
+You will need to install the fortran compiler first. For example:
+```
+- name: Install fortran
+  run: |
+    sudo apt-get update -y
+    sudo apt-get install -y gfortran
+```
+Then it is likely you need to specify the fortran compiler when you use `make`. If so, we should also pass the full compilation command to Coderrect. (`gcc` is pre-installed in the Github Action environment.)
+```
+- name: coderrect scan
+  uses: coderrect-inc/coderrect-github-action@v0.4
+  with:
+    buildCommand: "make COMPILER=GNU MPI_COMPILER=gfortran C_MPI_COMPILER=gcc"
+```
+
+For more details, take a look at this [cmake project](https://github.com/coderrect-inc/covid-sim) and [fortran project](https://github.com/coderrect-inc/CloverLeaf_OpenMP) to learn how to integrate Coderrect into more complex projects
 
 ## Inputs
 - `buildCommand`
