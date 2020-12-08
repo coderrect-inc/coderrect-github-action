@@ -70,6 +70,19 @@ Then it is likely that you need to specify the fortran compiler when you use `ma
 
 For more details, take a look at this [cmake project](https://github.com/coderrect-inc/covid-sim) and [fortran project](https://github.com/coderrect-inc/CloverLeaf_OpenMP) to learn how to integrate Coderrect into more complex projects
 
+### For customized analysis
+Coderrect allows you to provide a configuration file to fully customize your analysis.
+
+In order to do so, check our [documentation](https://coderrect.com/documentation/reference/) to see available configurations. Once you write a configuration file (say `coderrect.json`). You can pass it to the scanner as below:
+```yaml
+- name: coderrect scan
+  uses: coderrect-inc/coderrect-github-action@v0.4
+  with:
+    options: "-conf=/path/to/coderrect.json"
+```
+
+The path should be **a relative path from your build directory** (e.g., if your build directory is `./build/` and your config file is under the root path, then you should specify the option as `options: "-conf=../coderrect.json"`).
+
 ## Inputs
 - `buildCommand`
   - Default: `"make -j"`
