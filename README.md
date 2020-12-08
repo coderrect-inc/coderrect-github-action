@@ -19,6 +19,7 @@ Please find more information in our official website: [Coderrect.com](coderrect.
   with:
       buildCommand: make all -j 6
 ```
+Take a look at this [cmake project](https://github.com/coderrect-inc/CloverLeaf_OpenMP) and [fortran project](https://github.com/coderrect-inc/covid-sim ) to learn how to integrate Coderrect into more complex projects
 
 ## License
    Copyright 2020 Coderrect Inc.
