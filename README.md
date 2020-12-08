@@ -21,6 +21,20 @@ Please find more information in our official website: [Coderrect.com](coderrect.
 ```
 Take a look at this [cmake project](https://github.com/coderrect-inc/CloverLeaf_OpenMP) and [fortran project](https://github.com/coderrect-inc/covid-sim ) to learn how to integrate Coderrect into more complex projects
 
+## Inputs
+- `buildCommand`
+  - Default: `"make -j"`
+  - Description: The command to build your project. For example, the task to build your whole project might be `make all` instead of `make`.
+- `cleanCommand`
+  - Default: `"make clean"`
+  - Description: The command to clean your previous build. Coderrect need to capture the building process of your project for analysis, therefore if your have a test build before applying Coderrect, we need to clean your test build.
+- `buildPath`
+  - Default: `"build"`
+  - Description: The relative path for your cmake project's build directory.
+- `options`
+  - Default: `"-analyzeAllBinaries"`
+  - Description: The command line options for Coderrect Scanner. Check the (documentation)[https://coderrect.com/documentation/reference/] for all supported options.
+
 ## License
    Copyright 2020 Coderrect Inc.
 
