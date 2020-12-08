@@ -24,7 +24,7 @@ Take a look at this [cmake project](https://github.com/coderrect-inc/CloverLeaf_
 ## Inputs
 - `buildCommand`
   - Default: `"make -j"`
-  - Description: The command to build your project. For example, the task to build your whole project might be `make all` instead of `make`.
+  - Description: The command to build your project. For example, the command to build your whole project might be `make all` instead of `make`.
 - `cleanCommand`
   - Default: `"make clean"`
   - Description: The command to clean your previous build. Coderrect need to capture the building process of your project for analysis, therefore if your have a test build before applying Coderrect, we need to clean your test build.
