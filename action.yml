@@ -42,7 +42,7 @@ runs:
       shell: bash
     - run: |
         cd ${{ inputs.buildPath }}
-        coderrect ${{ inputs.options }} ${{ inputs.buildCommand }}
+        coderrect -noprogress ${{ inputs.options }} ${{ inputs.buildCommand }}
       shell: bash
     - run: |
         cd ${{ inputs.buildPath }}
