@@ -30,7 +30,7 @@ In general, integrating Coderrect requires two steps:
 2. Apply Coderrect Github Action
 ```yaml
 - name: Coderrect Scan
-  uses: coderrect-inc/coderrect-github-action@v0.5
+  uses: coderrect-inc/coderrect-github-action@v0.6
 ```
 
 ### For CMake projects
@@ -47,7 +47,7 @@ Since we are building the project under the `build` directory instead of the roo
 We will also need to specify the build directory for Coderrect.
 ```yaml
 - name: Coderrect Scan
-  uses: coderrect-inc/coderrect-github-action@v0.5
+  uses: coderrect-inc/coderrect-github-action@v0.6
   with:
     buildPath: "build"
 ```
@@ -63,7 +63,7 @@ You will need to install the fortran compiler first. For example:
 Then it is likely that you need to specify the fortran compiler when you use `make`. If so, you should also pass the full compilation command to Coderrect. (`gcc` is pre-installed in the Github Action environment.)
 ```yaml
 - name: coderrect scan
-  uses: coderrect-inc/coderrect-github-action@v0.5
+  uses: coderrect-inc/coderrect-github-action@v0.6
   with:
     buildCommand: "make COMPILER=GNU MPI_COMPILER=gfortran C_MPI_COMPILER=gcc"
 ```
@@ -76,7 +76,7 @@ Coderrect allows you to provide a configuration file to fully customize your ana
 In order to do so, check our [documentation](https://coderrect.com/documentation/reference/) to see available configurations. Once you write a configuration file (say `coderrect.json`). You can pass it to the scanner as below:
 ```yaml
 - name: coderrect scan
-  uses: coderrect-inc/coderrect-github-action@v0.5
+  uses: coderrect-inc/coderrect-github-action@v0.6
   with:
     options: "-conf=/path/to/coderrect.json"
 ```
