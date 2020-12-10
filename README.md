@@ -11,7 +11,7 @@ Coderrect Scanner Github Action with HTML report output.
 - Coderrect supports C/C++/Fortran code and common parallel programming interfaces such as OpenMP.
 - Coderrect Github Action supports generating formatted HTML reports and hosting them on Coderrect cloud to review.
 
-Please find more information in our official website: [Coderrect.com](coderrect.com) 
+Please find more information in our official website: [Coderrect.com](https://coderrect.com) 
 
 ## Example Usage
 Take [memcached](https://github.com/funemy/memcached) as an example for integrating Coderrect.
