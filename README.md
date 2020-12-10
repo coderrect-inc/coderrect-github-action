@@ -78,10 +78,10 @@ In order to do so, check our [documentation](https://coderrect.com/documentation
 - name: coderrect scan
   uses: coderrect-inc/coderrect-github-action@v0.6
   with:
-    options: "-conf=/path/to/coderrect.json"
+    options: "-analyzeAllBinaries -conf=/path/to/coderrect.json"
 ```
 
-The path should be **a relative path from your build directory** (e.g., if your build directory is `./build/` and your config file is under the root path, then you should specify the option as `options: "-conf=../coderrect.json"`).
+The path should be **a relative path from your build directory** (e.g., if your build directory is `./build/` and your config file is under the root path, then you should specify the config file as `"-conf=../coderrect.json"`).
 
 ## Inputs
 - `buildCommand`
