@@ -1,4 +1,4 @@
-name: Coderrect CI Integration
+name: Coderrect Scan
 description: >
   Scan your code with Coderrect to detect concurrency bugs,
   and upload the detection report to Coderrect remote server.
