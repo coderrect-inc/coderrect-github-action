@@ -14,8 +14,8 @@ Coderrect Scanner Github Action with HTML report output.
 Please find more information in our official website: [Coderrect.com](https://coderrect.com) 
 
 ## Example Usage
-Take [memcached](https://github.com/funemy/memcached) as an example for integrating Coderrect.
-Check [here](https://github.com/funemy/memcached/blob/master/.github/workflows/ci.yml) for the final script.
+Take [memcached](https://github.com/coderrect-inc/memcached) as an example for integrating Coderrect.
+Check [here](https://github.com/coderrect-inc/memcached/blob/master/.github/workflows/ci.yml) for the final script.
 
 In general, integrating Coderrect requires two steps:
 
