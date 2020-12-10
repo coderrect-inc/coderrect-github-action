@@ -1,7 +1,7 @@
 name: Coderrect Scan
 description: >
-  Scan your code with Coderrect to detect concurrency bugs,
-  and upload the detection report to Coderrect remote server.
+  Scan your code with Coderrect to detect concurrency bugs and multithreading errors in your multithreaded programs (e.g., data races, race conditions),
+  and view the HTML report through Coderrect cloud.
 branding:
   icon: check
   color: green
