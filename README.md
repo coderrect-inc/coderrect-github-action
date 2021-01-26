@@ -3,7 +3,7 @@
 ![issue](https://img.shields.io/github/issues/coderrect-inc/coderrect-github-action)
 ![release](https://img.shields.io/github/v/release/coderrect-inc/coderrect-github-action?include_prereleases)
 
-GitHub Action for the Coderrect static race detection scanner
+**GitHub Action for the Coderrect static race detection scanner**
 
 <img src="images/coderrect-logo.png" alt="Github" height="120">
 
