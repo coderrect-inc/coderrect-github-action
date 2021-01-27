@@ -228,7 +228,7 @@ Inputs are the set of fields you can configure to customized the behavior of Cod
   - Default: `"make clean"`
   - Description: The command to clean your previous build. Coderrect needs to capture the building process for analysis, therefore if you have done a test build before applying Coderrect, we need to clean your test build first.
 - `buildPath`
-  - Default: `"."`
+  - Default: `"."` (the root path of your project)
   - Description: The relative path for your cmake project's build directory.
 - `options`
   - Default: `"-analyzeAllBinaries"`
