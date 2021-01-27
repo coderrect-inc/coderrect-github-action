@@ -22,6 +22,17 @@ Documentation and examples are available at: [https://coderrect.com/docs/github-
 
 More information about Coderrect Scanner are available at: [Coderrect.com](https://coderrect.com)
 
+**Table of Contents**
+
+- [Demo](#demo)
+- [Example Usage](#example-usage)
+  - [Versioning](#versioning)
+  - [For CMake projects](#for-cmake-projects)
+  - [For Fortran projects](#for-fortran-projects)
+  - [For customized analysis](#for-customized-analysis)
+- [Inputs](#inputs)
+- [License](#license)
+
 ## Demo
 
 <img src="images/demo-small.gif" alt="Demo" height="600">
