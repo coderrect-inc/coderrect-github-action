@@ -14,7 +14,7 @@
 ![release](https://img.shields.io/github/v/release/coderrect-inc/coderrect-github-action?include_prereleases)
 
 ## About
-- Coderrect is an efficient and accurate static analysis solution to identify potential concurrency bugs in your multi-threaded software.
+[Coderrect](https://coderrect.com) is an efficient and accurate static analysis solution to identify potential concurrency bugs in your multi-threaded software.
 - Coderrect supports C/C++/Fortran code and common parallel programming interfaces including OpenMP, pthread, and C++ std::thread.
 - Coderrect Github Action supports generating formatted HTML reports and hosting them on Coderrect cloud for users to review.
 
