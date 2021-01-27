@@ -36,7 +36,7 @@ More information about Coderrect Scanner is available at: [Coderrect.com](https:
 
 ## Demo
 
-<img src="images/demo.gif" alt="Demo" height="600">
+<img src="images/demo.gif" alt="Demo" height="490px">
 
 ## Example Usage
 Take [memcached](https://github.com/coderrect-inc/memcached) as an example for integrating Coderrect.
