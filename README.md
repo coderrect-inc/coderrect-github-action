@@ -5,7 +5,7 @@
 
 ### GitHub Action for the Coderrect static race detection scanner
 
-<img src="images/coderrect-logo.png" alt="Coderrect" height="120">
+<img src="images/coderrect-logo.png" alt="Coderrect" height="60">
 
 - Coderrect is an efficient and accurate static analysis solution to identify potential concurrency bugs in your multi-threaded software.
 - Coderrect supports C/C++/Fortran code and common parallel programming interfaces including OpenMP, pthread, and C++ std::thread.
