@@ -20,7 +20,7 @@
 
 Documentation and examples are available at: [https://coderrect.com/docs/github-actions/](https://coderrect.com/docs/github-actions/)
 
-More information about Coderrect Scanner are available at: [Coderrect.com](https://coderrect.com)
+More information about Coderrect Scanner is available at: [Coderrect.com](https://coderrect.com)
 
 **Table of Contents**
 
