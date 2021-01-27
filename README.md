@@ -27,7 +27,6 @@ More information about Coderrect Scanner is available at: [Coderrect.com](https:
 
 - [Demo](#demo)
 - [Example Usage](#example-usage)
-  - [Versioning](#versioning)
   - [For CMake projects](#for-cmake-projects)
   - [For Fortran projects](#for-fortran-projects)
   - [For customized analysis](#for-customized-analysis)
