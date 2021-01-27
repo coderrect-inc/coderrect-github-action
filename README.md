@@ -7,8 +7,6 @@
 
 <img src="images/coderrect-logo.png" alt="Coderrect" height="120">
 
-<img src="images/demo-small.gif" alt="Demo" height="600">
-
 - Coderrect is an efficient and accurate static analysis solution to identify potential concurrency bugs in your multi-threaded software.
 - Coderrect supports C/C++/Fortran code and common parallel programming interfaces including OpenMP, pthread, and C++ std::thread.
 - Coderrect Github Action supports generating formatted HTML reports and hosting them on Coderrect cloud for users to review.
@@ -16,6 +14,8 @@
 Documentation and examples are available at: [https://coderrect.com/docs/github-actions/](https://coderrect.com/docs/github-actions/)
 
 More information about Coderrect Scanner are available at: [Coderrect.com](https://coderrect.com)
+
+<img src="images/demo-small.gif" alt="Demo" height="600">
 
 ## Example Usage
 Take [memcached](https://github.com/coderrect-inc/memcached) as an example for integrating Coderrect.
