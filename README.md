@@ -22,6 +22,8 @@ Documentation and examples are available at: [https://coderrect.com/docs/github-
 
 More information about Coderrect Scanner are available at: [Coderrect.com](https://coderrect.com)
 
+## Demo
+
 <img src="images/demo-small.gif" alt="Demo" height="600">
 
 ## Example Usage
