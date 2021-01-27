@@ -48,15 +48,17 @@ In this tutorial, we take [memcached][memcached] as an example project to demons
 
 To start, you can click the “Action“ tab above your GitHub Repository.
 
-<img src="image/action-tab.png" alt="action tab" height="">
+<img src="images/github-integration1.png" alt="action tab" width="600px">
 
 Once you enter the Action tab, GitHub will guide you to create your own CI/CD script by providing different template scripts based on different building system.
 
-<img src="image/script-templates.png" alt="script templates" height="">
+<img src="images/github-integration2.png" alt="template selection" width="600px">
 
 Here you can select **“set up a workflow yourself“** to use the basic template.
 
 GitHub will automatically create a YAML file (`main.yml` by default) under **`.github/workflows`** and this is the path which you should put your future scripts under. The left-hand side is the script editor and the right-hand side is the place you can search different existing Action scripts published in GitHub Marketplace.
+
+<img src="images/github-integration3.png" alt="edit-panel" width="600px">
 
 The default template script looks similar as below, we will explain it in detail:
 
@@ -152,15 +154,15 @@ Note that including task “Build“ is **not required** for Coderrect to functi
 
 - **Step3**: Apply Coderrect to your project. You can search the GitHub Marketplace to obtain the most updated script and all available options.
 
-<img>
+<img src="images/github-integration4.png" alt="template selection" width="600px">
 
 Once this script is saved, the GitHub Action you just defined will be automatically triggered when you push new commits or merge pull requests. You can review them by entering the “Action“ tab.
 
-<img>
+<img src="images/github-integration5.png" alt="template selection" width="600px">
 
 To see Coderrect’s race detection report, you can click task “coderrect scan“ to expand its terminal output. Coderrect will output a list of summary for all executables it analyzes and also attach an report link at the end for you to view them in detail.
 
-<img>
+<img src="images/github-integration7.png" alt="template selection" width="600px">
 
 If you are using a different building system (e.g., CMake) or a different language or compiler, then you need to properly configure Coderrect. Here we provide instructions for some commonly used configurations.
 
