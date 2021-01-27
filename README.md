@@ -185,6 +185,8 @@ We will also need to specify the build directory for Coderrect.
     buildPath: "build"
 ```
 
+For more details, take a look at this [cmake project](https://github.com/coderrect-inc/covid-sim) to learn how to integrate Coderrect into more complex projects
+
 ### For Fortran projects
 You will need to install the fortran compiler first. For example:
 ```yaml
@@ -201,7 +203,7 @@ Then it is likely that you need to specify the fortran compiler when you use `ma
     buildCommand: "make COMPILER=GNU MPI_COMPILER=gfortran C_MPI_COMPILER=gcc"
 ```
 
-For more details, take a look at this [cmake project](https://github.com/coderrect-inc/covid-sim) and [fortran project](https://github.com/coderrect-inc/CloverLeaf_OpenMP) to learn how to integrate Coderrect into more complex projects
+For more details, take a look at this [Fortran project](https://github.com/coderrect-inc/CloverLeaf_OpenMP) to learn how to integrate Coderrect into more complex projects
 
 ### For customized analysis
 Coderrect allows you to provide a configuration file to fully customize your analysis.
