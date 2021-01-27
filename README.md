@@ -1,12 +1,19 @@
-# Coderrect Github Action <img src="images/github.png" alt="Github" width="40" height="40">
+<p align="center">
+<a href="https://coderrect.com"><img src="images/coderrect-logo.png" height="100px"/></a>
+ </p>
+<h1 align="center">Coderrect Github Action </h1>
+<div align="center">
+ <strong>
+    GitHub Action for the Coderrect static race detection scanner
+ </strong>
+</div>
+<br/>
+
 ![license](https://img.shields.io/github/license/coderrect-inc/coderrect-github-action)
 ![issue](https://img.shields.io/github/issues/coderrect-inc/coderrect-github-action)
 ![release](https://img.shields.io/github/v/release/coderrect-inc/coderrect-github-action?include_prereleases)
 
-### GitHub Action for the Coderrect static race detection scanner
-
-<img src="images/coderrect-logo.png" alt="Coderrect" height="60">
-
+## About
 - Coderrect is an efficient and accurate static analysis solution to identify potential concurrency bugs in your multi-threaded software.
 - Coderrect supports C/C++/Fortran code and common parallel programming interfaces including OpenMP, pthread, and C++ std::thread.
 - Coderrect Github Action supports generating formatted HTML reports and hosting them on Coderrect cloud for users to review.
