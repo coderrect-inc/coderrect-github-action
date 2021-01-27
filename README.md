@@ -52,7 +52,7 @@ To start, you can click the “Action“ tab above your GitHub Repository.
 
 Once you enter the Action tab, GitHub will guide you to create your own CI/CD script by providing different template scripts based on different building system.
 
-<img src="images/github-integration2.png" alt="template selection" width="600px">
+<img src="images/github-integration2.png" alt="template selection" width="900px">
 
 Here you can select **“set up a workflow yourself“** to use the basic template.
 
