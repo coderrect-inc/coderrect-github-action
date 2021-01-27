@@ -12,7 +12,7 @@ inputs:
   cleanCommand:
     description: "Custom clean command"
     required: false
-    default: "make clean"
+    default: "make clean || true"
   buildPath:
     description: "The relative path for your build directory"
     required: false
