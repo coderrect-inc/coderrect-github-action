@@ -31,7 +31,7 @@ More information about Coderrect Scanner is available at: [Coderrect.com](https:
   - [For CMake projects](#for-cmake-projects)
   - [For Fortran projects](#for-fortran-projects)
   - [For customized analysis](#for-customized-analysis)
-- [Inputs](#inputs)
+- [Customizable Inputs](#inputs)
 - [License](#license)
 
 ## Demo
@@ -217,6 +217,8 @@ In order to do so, check our [documentation](https://coderrect.com/documentation
 The path should be **a relative path from your build directory** (e.g., if your build directory is `./build/` and your config file is under the root path, then you should specify the config file as `"-conf=../coderrect.json"`).
 
 ## Inputs
+Inputs are the set of fields you can configure to customized the behavior of Coderrect Gtihub Action.
+
 - `buildCommand`
   - Default: `"make -j"`
   - Description: The command to build your project. For example, the command to build your whole project might be `make all` instead of `make`.
