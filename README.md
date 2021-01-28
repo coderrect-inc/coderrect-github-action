@@ -235,7 +235,7 @@ Inputs are the set of fields you can configure to customized the behavior of Cod
   - Default: `"make -j"`
   - Description: The command to build your project. For example, the command to build your whole project might be `make all` instead of `make`.
 - `cleanCommand`
-  - Default: `"make clean"`
+  - Default: `"make clean || true"`
   - Description: The command to clean your previous build. Coderrect needs to capture the building process for analysis, therefore if you have done a test build before applying Coderrect, we need to clean your test build first.
 - `buildPath`
   - Default: `"."` (the root path of your project)
