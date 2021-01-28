@@ -23,6 +23,16 @@ Documentation and examples are available at: [Coderrect Action Documentation](ht
 
 More information about Coderrect Scanner is available at: [Coderrect.com](https://coderrect.com)
 
+## Quick Start
+
+If you are an experienced user of GitHub Action, you can easily integrate Coderrect to your workflow by adding the following to `.github/workflows/ci.yml`:
+
+```
+# Add the following to "steps"
+- name: Coderrect Scan
+  uses: coderrect-inc/coderrect-github-action@main
+```
+
 **Table of Contents**
 
 - [Demo](#demo)
