@@ -41,7 +41,7 @@ If you are an experienced user of GitHub Action, you can easily integrate Coderr
   - [For CMake projects](#for-cmake-projects)
   - [For Fortran projects](#for-fortran-projects)
   - [For customized analysis](#for-customized-analysis)
-- [Customizable Inputs](#inputs)
+- [Configurable Inputs](#inputs)
 - [License](#license)
 
 ## Demo
